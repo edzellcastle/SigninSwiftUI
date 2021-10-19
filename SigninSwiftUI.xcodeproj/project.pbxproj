@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		639BC39C271A77D00038A978 /* SigninSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC39B271A77D00038A978 /* SigninSwiftUIApp.swift */; };
-		639BC39E271A77D00038A978 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC39D271A77D00038A978 /* ContentView.swift */; };
+		639BC39E271A77D00038A978 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC39D271A77D00038A978 /* HomeView.swift */; };
 		639BC3A0271A77D30038A978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639BC39F271A77D30038A978 /* Assets.xcassets */; };
 		639BC3A3271A77D30038A978 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3A2271A77D30038A978 /* Preview Assets.xcassets */; };
 		639BC3AD271A77D30038A978 /* SigninSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3AC271A77D30038A978 /* SigninSwiftUITests.swift */; };
 		639BC3B7271A77D30038A978 /* SigninSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3B6271A77D30038A978 /* SigninSwiftUIUITests.swift */; };
 		639BC3B9271A77D30038A978 /* SigninSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3B8271A77D30038A978 /* SigninSwiftUIUITestsLaunchTests.swift */; };
+		639BC3C6271B43AF0038A978 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3C5271B43AF0038A978 /* ViewModel.swift */; };
+		639BC3C8271CF4270038A978 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3C7271CF4270038A978 /* ColorExtensions.swift */; };
+		639BC3CA271D3DFD0038A978 /* TextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */; };
+		639BC3CC271F35810038A978 /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3CB271F35800038A978 /* PlaceholderStyle.swift */; };
+		639BC3CE271F368B0038A978 /* SigninTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		639BC398271A77D00038A978 /* SigninSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigninSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639BC39B271A77D00038A978 /* SigninSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninSwiftUIApp.swift; sourceTree = "<group>"; };
-		639BC39D271A77D00038A978 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		639BC39D271A77D00038A978 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		639BC39F271A77D30038A978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639BC3A2271A77D30038A978 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		639BC3A8271A77D30038A978 /* SigninSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SigninSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		639BC3B2271A77D30038A978 /* SigninSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SigninSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		639BC3B6271A77D30038A978 /* SigninSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninSwiftUIUITests.swift; sourceTree = "<group>"; };
 		639BC3B8271A77D30038A978 /* SigninSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		639BC3C5271B43AF0038A978 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		639BC3C7271CF4270038A978 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtensions.swift; sourceTree = "<group>"; };
+		639BC3CB271F35800038A978 /* PlaceholderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderStyle.swift; sourceTree = "<group>"; };
+		639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				639BC39B271A77D00038A978 /* SigninSwiftUIApp.swift */,
-				639BC39D271A77D00038A978 /* ContentView.swift */,
+				639BC39D271A77D00038A978 /* HomeView.swift */,
+				639BC3C5271B43AF0038A978 /* ViewModel.swift */,
+				639BC3C7271CF4270038A978 /* ColorExtensions.swift */,
+				639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */,
+				639BC3CB271F35800038A978 /* PlaceholderStyle.swift */,
+				639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */,
 				639BC39F271A77D30038A978 /* Assets.xcassets */,
 				639BC3A1271A77D30038A978 /* Preview Content */,
 			);
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639BC39E271A77D00038A978 /* ContentView.swift in Sources */,
+				639BC39E271A77D00038A978 /* HomeView.swift in Sources */,
+				639BC3C6271B43AF0038A978 /* ViewModel.swift in Sources */,
+				639BC3CE271F368B0038A978 /* SigninTextFieldStyle.swift in Sources */,
 				639BC39C271A77D00038A978 /* SigninSwiftUIApp.swift in Sources */,
+				639BC3CC271F35810038A978 /* PlaceholderStyle.swift in Sources */,
+				639BC3C8271CF4270038A978 /* ColorExtensions.swift in Sources */,
+				639BC3CA271D3DFD0038A978 /* TextFieldExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
