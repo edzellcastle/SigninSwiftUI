@@ -20,17 +20,16 @@ struct HomeView: View {
                 .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 10) {
                 Text("Profile Creation")
-                    .font(Font.custom("Roboto", size: 30))
+                    .font(Font.custom("Roboto-Bold", size: 36))
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                 Text("Use the form below to submit your porfolio.\nAn email and password are required.")
                     .foregroundColor(Color(UIColor.darkGray))
-                    .font(.system(size: 12, weight: .medium, design: .default))
+                    .font(Font.custom("Roboto-Regular", size: 16))
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
                 HStack() {
                     Spacer()
                     Button(action: {
-                        
                     }, label: {
                         Text("Tap to add\navatar")
                             .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)

@@ -19,6 +19,18 @@
 		639BC3CA271D3DFD0038A978 /* TextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */; };
 		639BC3CC271F35810038A978 /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3CB271F35800038A978 /* PlaceholderStyle.swift */; };
 		639BC3CE271F368B0038A978 /* SigninTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */; };
+		639BC3DC271F673A0038A978 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D0271F67390038A978 /* Roboto-MediumItalic.ttf */; };
+		639BC3DD271F673A0038A978 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D1271F67390038A978 /* Roboto-Regular.ttf */; };
+		639BC3DE271F673A0038A978 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D2271F67390038A978 /* Roboto-Thin.ttf */; };
+		639BC3DF271F673A0038A978 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D3271F67390038A978 /* Roboto-Bold.ttf */; };
+		639BC3E0271F673A0038A978 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D4271F67390038A978 /* Roboto-Light.ttf */; };
+		639BC3E1271F673A0038A978 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D5271F67390038A978 /* Roboto-LightItalic.ttf */; };
+		639BC3E2271F673A0038A978 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D6271F67390038A978 /* Roboto-ThinItalic.ttf */; };
+		639BC3E3271F673A0038A978 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D7271F67390038A978 /* Roboto-BoldItalic.ttf */; };
+		639BC3E4271F673A0038A978 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D8271F67390038A978 /* Roboto-Black.ttf */; };
+		639BC3E5271F673A0038A978 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D9271F67390038A978 /* Roboto-BlackItalic.ttf */; };
+		639BC3E6271F673A0038A978 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3DA271F67390038A978 /* Roboto-Italic.ttf */; };
+		639BC3E7271F673A0038A978 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3DB271F673A0038A978 /* Roboto-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +66,19 @@
 		639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtensions.swift; sourceTree = "<group>"; };
 		639BC3CB271F35800038A978 /* PlaceholderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderStyle.swift; sourceTree = "<group>"; };
 		639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninTextFieldStyle.swift; sourceTree = "<group>"; };
+		639BC3D0271F67390038A978 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		639BC3D1271F67390038A978 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		639BC3D2271F67390038A978 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		639BC3D3271F67390038A978 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		639BC3D4271F67390038A978 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		639BC3D5271F67390038A978 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		639BC3D6271F67390038A978 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		639BC3D7271F67390038A978 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		639BC3D8271F67390038A978 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		639BC3D9271F67390038A978 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		639BC3DA271F67390038A978 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		639BC3DB271F673A0038A978 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		639BC3EA271F6AFC0038A978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +109,7 @@
 		639BC38F271A77D00038A978 = {
 			isa = PBXGroup;
 			children = (
+				639BC3E9271F67C70038A978 /* Fonts */,
 				639BC39A271A77D00038A978 /* SigninSwiftUI */,
 				639BC3AB271A77D30038A978 /* SigninSwiftUITests */,
 				639BC3B5271A77D30038A978 /* SigninSwiftUIUITests */,
@@ -104,6 +130,7 @@
 		639BC39A271A77D00038A978 /* SigninSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				639BC3EA271F6AFC0038A978 /* Info.plist */,
 				639BC39B271A77D00038A978 /* SigninSwiftUIApp.swift */,
 				639BC39D271A77D00038A978 /* HomeView.swift */,
 				639BC3C5271B43AF0038A978 /* ViewModel.swift */,
@@ -140,6 +167,25 @@
 				639BC3B8271A77D30038A978 /* SigninSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = SigninSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		639BC3E9271F67C70038A978 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				639BC3D8271F67390038A978 /* Roboto-Black.ttf */,
+				639BC3D9271F67390038A978 /* Roboto-BlackItalic.ttf */,
+				639BC3D3271F67390038A978 /* Roboto-Bold.ttf */,
+				639BC3D7271F67390038A978 /* Roboto-BoldItalic.ttf */,
+				639BC3DA271F67390038A978 /* Roboto-Italic.ttf */,
+				639BC3D4271F67390038A978 /* Roboto-Light.ttf */,
+				639BC3D6271F67390038A978 /* Roboto-ThinItalic.ttf */,
+				639BC3D2271F67390038A978 /* Roboto-Thin.ttf */,
+				639BC3D1271F67390038A978 /* Roboto-Regular.ttf */,
+				639BC3D0271F67390038A978 /* Roboto-MediumItalic.ttf */,
+				639BC3DB271F673A0038A978 /* Roboto-Medium.ttf */,
+				639BC3D5271F67390038A978 /* Roboto-LightItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +293,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				639BC3A3271A77D30038A978 /* Preview Assets.xcassets in Resources */,
+				639BC3DC271F673A0038A978 /* Roboto-MediumItalic.ttf in Resources */,
+				639BC3E1271F673A0038A978 /* Roboto-LightItalic.ttf in Resources */,
+				639BC3DF271F673A0038A978 /* Roboto-Bold.ttf in Resources */,
+				639BC3DD271F673A0038A978 /* Roboto-Regular.ttf in Resources */,
+				639BC3E6271F673A0038A978 /* Roboto-Italic.ttf in Resources */,
+				639BC3E4271F673A0038A978 /* Roboto-Black.ttf in Resources */,
+				639BC3E0271F673A0038A978 /* Roboto-Light.ttf in Resources */,
+				639BC3E5271F673A0038A978 /* Roboto-BlackItalic.ttf in Resources */,
+				639BC3E2271F673A0038A978 /* Roboto-ThinItalic.ttf in Resources */,
+				639BC3E7271F673A0038A978 /* Roboto-Medium.ttf in Resources */,
+				639BC3DE271F673A0038A978 /* Roboto-Thin.ttf in Resources */,
+				639BC3E3271F673A0038A978 /* Roboto-BoldItalic.ttf in Resources */,
 				639BC3A0271A77D30038A978 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +500,7 @@
 				DEVELOPMENT_TEAM = DK89B3CEZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SigninSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +531,7 @@
 				DEVELOPMENT_TEAM = DK89B3CEZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SigninSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
