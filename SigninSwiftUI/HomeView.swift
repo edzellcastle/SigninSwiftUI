@@ -32,7 +32,15 @@ struct HomeView: View {
                 HStack() {
                     Spacer()
                     ZStack {
-                        if newImage == nil {
+                        if let newImage = newImage {
+                            Image(uiImage: newImage)
+                                .resizable()
+                                .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)
+                                .cornerRadius(10.0)
+                                .onTapGesture() {
+                                    showImagePicker.toggle()
+                                }
+                        } else {
                             Button(action: {
                                 showImagePicker.toggle()
                             }, label: {
@@ -47,15 +55,6 @@ struct HomeView: View {
                             }) {
                                 ImagePicker(sourceType: .camera, selectedImage: self.$newImage)
                             }
-                        } else {
-                            Image(uiImage: newImage!)
-                                .resizable()
-                                .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)
-                                //.resizable()
-                                .cornerRadius(10.0)
-                                .onTapGesture() {
-                                    showImagePicker.toggle()
-                                }
                         }
                     }
                     .cornerRadius(10)
