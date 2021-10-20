@@ -31,6 +31,7 @@
 		639BC3E5271F673A0038A978 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3D9271F67390038A978 /* Roboto-BlackItalic.ttf */; };
 		639BC3E6271F673A0038A978 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3DA271F67390038A978 /* Roboto-Italic.ttf */; };
 		639BC3E7271F673A0038A978 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 639BC3DB271F673A0038A978 /* Roboto-Medium.ttf */; };
+		639BC3EC271F97460038A978 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC3EB271F97460038A978 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		639BC3DA271F67390038A978 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		639BC3DB271F673A0038A978 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		639BC3EA271F6AFC0038A978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		639BC3EB271F97460038A978 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				639BC3C9271D3DFD0038A978 /* TextFieldExtensions.swift */,
 				639BC3CB271F35800038A978 /* PlaceholderStyle.swift */,
 				639BC3CD271F368B0038A978 /* SigninTextFieldStyle.swift */,
+				639BC3EB271F97460038A978 /* ImagePicker.swift */,
 				639BC39F271A77D30038A978 /* Assets.xcassets */,
 				639BC3A1271A77D30038A978 /* Preview Content */,
 			);
@@ -335,6 +338,7 @@
 				639BC3CE271F368B0038A978 /* SigninTextFieldStyle.swift in Sources */,
 				639BC39C271A77D00038A978 /* SigninSwiftUIApp.swift in Sources */,
 				639BC3CC271F35810038A978 /* PlaceholderStyle.swift in Sources */,
+				639BC3EC271F97460038A978 /* ImagePicker.swift in Sources */,
 				639BC3C8271CF4270038A978 /* ColorExtensions.swift in Sources */,
 				639BC3CA271D3DFD0038A978 /* TextFieldExtensions.swift in Sources */,
 			);
@@ -501,6 +505,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SigninSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires use of the camera to take a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -532,6 +537,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SigninSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires use of the camera to take a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

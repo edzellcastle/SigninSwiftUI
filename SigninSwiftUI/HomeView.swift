@@ -13,6 +13,8 @@ struct HomeView: View {
     @State private var emailAddressText = ""
     @State private var passwordText = ""
     @State private var websiteText = ""
+    @State private var showImagePicker: Bool = false
+    @State private var newImage: UIImage? = nil
     
     var body: some View {
         ZStack {
@@ -20,23 +22,42 @@ struct HomeView: View {
                 .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 10) {
                 Text("Profile Creation")
-                    .font(Font.custom("Roboto-Bold", size: 36))
+                    .font(Font.custom("Roboto-Bold", size: 35))
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                 Text("Use the form below to submit your porfolio.\nAn email and password are required.")
                     .foregroundColor(Color(UIColor.darkGray))
-                    .font(Font.custom("Roboto-Regular", size: 16))
+                    .font(Font.custom("Roboto-Regular", size: 12))
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
                 HStack() {
                     Spacer()
-                    Button(action: {
-                    }, label: {
-                        Text("Tap to add\navatar")
-                            .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)
-                            .font(.system(size: 12, weight: .medium, design: .default))
-                            .foregroundColor(Color.black)
-                            .background(Color(.systemGray5))
-                    })
+                    ZStack {
+                        if newImage == nil {
+                            Button(action: {
+                                showImagePicker.toggle()
+                            }, label: {
+                                Text("Tap to add\navatar")
+                                    .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)
+                                    .font(.system(size: 12, weight: .medium, design: .default))
+                                    .foregroundColor(Color.black)
+                                    .background(Color(.systemGray5))
+                            })
+                            .sheet(isPresented: self.$showImagePicker, onDismiss: {
+ 
+                            }) {
+                                ImagePicker(sourceType: .camera, selectedImage: self.$newImage)
+                            }
+                        } else {
+                            Image(uiImage: newImage!)
+                                .resizable()
+                                .frame(width: CGFloat(120), height: CGFloat(150), alignment: .center)
+                                //.resizable()
+                                .cornerRadius(10.0)
+                                .onTapGesture() {
+                                    showImagePicker.toggle()
+                                }
+                        }
+                    }
                     .cornerRadius(10)
                     Spacer()
                 }
