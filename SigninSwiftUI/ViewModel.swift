@@ -20,7 +20,7 @@ class ViewModel: ObservableObject {
         website = ""
     }
     
-    func storeProfileImage() {
+    func submitButtonTapped(firstName: String, emailAddress: String, password: String, website: String, profileImage: UIImage?) {
         
     }
 }

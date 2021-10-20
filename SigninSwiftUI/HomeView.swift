@@ -9,18 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel = ViewModel()
-    @State private var firstNameText = ""
-    @State private var emailAddressText = ""
-    @State private var passwordText = ""
-    @State private var websiteText = ""
+    @State private var firstNameText: String = ""
+    @State private var emailAddressText: String = ""
+    @State private var passwordText: String = ""
+    @State private var websiteText: String = ""
     @State private var showImagePicker: Bool = false
     @State private var newImage: UIImage? = nil
+    @State private var isValidEmail: Bool = false
+    @State private var isValidPassword: Bool = false
+    @State private var isEmailAlertPresented: Bool = false
+    @State private var isPasswordAlertPresented: Bool = false
     
     var body: some View {
         ZStack {
             Color.white
                 .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 10) {
+                Spacer()
+                    .frame(height: 20)
                 Text("Profile Creation")
                     .font(Font.custom("Roboto-Bold", size: 35))
                     .fontWeight(.bold)
@@ -65,18 +71,38 @@ struct HomeView: View {
                         .textFieldStyle(SigninTextFieldStyle())
                         .modifier(PlaceholderStyle(showPlaceHolder: firstNameText.isEmpty, placeholder: "First Name"))
                     TextField("", text: $emailAddressText)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
                         .textFieldStyle(SigninTextFieldStyle())
                         .modifier(PlaceholderStyle(showPlaceHolder: emailAddressText.isEmpty, placeholder: "Email Address"))
+                        .onChange(of: emailAddressText) { (value) in
+                            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+                            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+                            isValidEmail = emailPred.evaluate(with: emailAddressText)
+                        }
                     SecureField("", text: $passwordText)
                         .textFieldStyle(SigninTextFieldStyle())
                         .modifier(PlaceholderStyle(showPlaceHolder: passwordText.isEmpty, placeholder: "Password"))
+                        .onChange(of: passwordText) { (value) in
+                            isValidPassword = value.count > 0
+                        }
                     TextField("", text: $websiteText)
+                        .keyboardType(.URL)
+                        .autocapitalization(.none)
                         .textFieldStyle(SigninTextFieldStyle())
                         .modifier(PlaceholderStyle(showPlaceHolder: websiteText.isEmpty, placeholder: "Website"))
                 }
                 Spacer()
                 Button(action: {
-                    self.viewModel.storeProfileImage()
+                    if isValidEmail == false {
+                        isEmailAlertPresented = true
+                    }
+                    if isValidPassword == false {
+                        isPasswordAlertPresented = true
+                    }
+                    if isValidEmail && isValidPassword {
+                        self.viewModel.submitButtonTapped(firstName: firstNameText, emailAddress: emailAddressText, password: passwordText, website: websiteText, profileImage: newImage)
+                    }
                 }, label: {
                     Text("Submit")
                         .fontWeight(.medium)
@@ -88,6 +114,14 @@ struct HomeView: View {
                     .cornerRadius(15)
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
+                Spacer()
+                    .frame(height: 20)
+            }
+            if isEmailAlertPresented {
+                RequiredAlertView(isShown: $isEmailAlertPresented, fieldName: "Email address")
+            }
+            if isPasswordAlertPresented {
+                RequiredAlertView(isShown: $isPasswordAlertPresented, fieldName: "Password")
             }
         }
     }
