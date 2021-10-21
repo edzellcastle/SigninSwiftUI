@@ -19,11 +19,11 @@ struct HomeView: View {
     @State private var isValidPassword: Bool = false
     @State private var isEmailAlertPresented: Bool = false
     @State private var isPasswordAlertPresented: Bool = false
+    @State private var isShowingConfirmationView = false
+    @State var greeting: String = ""
     
     var body: some View {
         ZStack {
-            Color.white
-                .ignoresSafeArea()
             VStack(alignment: .leading, spacing: 10) {
                 Spacer()
                     .frame(height: 20)
@@ -101,7 +101,8 @@ struct HomeView: View {
                         isPasswordAlertPresented = true
                     }
                     if isValidEmail && isValidPassword {
-                        self.viewModel.submitButtonTapped(firstName: firstNameText, emailAddress: emailAddressText, password: passwordText, website: websiteText, profileImage: newImage)
+                        greeting = self.viewModel.submitButtonTapped(firstName: firstNameText, emailAddress: emailAddressText, password: passwordText, website: websiteText, profileImage: newImage)
+                        isShowingConfirmationView = true
                     }
                 }, label: {
                     Text("Submit")
@@ -111,6 +112,9 @@ struct HomeView: View {
                         .foregroundColor(Color.white)
                         .background(LinearGradient(gradient: Gradient(colors: [Color.redOrange, Color.orangeOrange]), startPoint: .leading, endPoint: .trailing))
                 })
+                    .fullScreenCover(isPresented: $isShowingConfirmationView) {
+                        ConfirmationView(isShown: $isShowingConfirmationView, profilePicture: $newImage, firstName: $firstNameText, emailAddress: $emailAddressText, website: $websiteText)
+                    }
                     .cornerRadius(15)
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
