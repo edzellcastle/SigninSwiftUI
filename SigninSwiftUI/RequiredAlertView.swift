@@ -42,9 +42,3 @@ struct RequiredAlertView: View {
             .shadow(color: Color(UIColor.lightGray), radius:6)
     }
 }
-
-//struct RequiredAlertView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RequiredAlertView(isShown: <#Binding<Bool>#>, text: <#Binding<String>#>)
-//    }
-//}
